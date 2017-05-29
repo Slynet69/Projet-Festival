@@ -9,8 +9,8 @@
 .fancybox-container {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 25%;
+  width: 50%;
   height: 100%;
   z-index: 99993;
   -webkit-backface-visibility: hidden;
@@ -26,14 +26,15 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: #0f0f11;
+  /*background: #0f0f11;*/
+  background-color:rgb(119,155,187);        
   opacity: 0;
   transition-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
 .fancybox-container--ready .fancybox-bg {
-  opacity: 0.87;
+  opacity: 0.60;
   transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1); }
 
 .fancybox-controls {
@@ -68,7 +69,7 @@
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: center;
   color: #ddd;
-  background-color: rgba(30, 30, 30, 0.7);
+  background-color: rgba(30, 30, 30, 0.7);  
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -83,10 +84,12 @@
   top: 0;
   right: 0;
   display: none;
-  pointer-events: all; }
+  pointer-events: all;
+  }
 
 .fancybox-show-buttons .fancybox-buttons {
-  display: block; }
+  display: block;
+  }
 
 .fancybox-slider-wrap {
   overflow: hidden;
@@ -150,7 +153,7 @@
 .fancybox-content {
   display: inline-block;
   position: relative;
-  margin: 44px auto;
+  margin:auto;
   padding: 0;
   border: 0;
   width: 80%;
@@ -280,13 +283,15 @@
   right: 5px;
   width: 30px;
   height: 30px;
-  font: 20px/30px Arial,"Helvetica Neue",Helvetica,sans-serif;
+  font: 20px/30px bold Arial,"Helvetica Neue",Helvetica,sans-serif;
   color: #888;
+  
   font-weight: 300;
   text-align: center;
   border-radius: 50%;
   border-width: 0;
-  background: #fff;
+  *background: #fff;
+     
   transition: background .2s;
   box-sizing: border-box;
   z-index: 2; }
@@ -414,7 +419,10 @@
   border-bottom-right-radius: 5px; }
 
 .fancybox-button--close {
-  float: right; }
+  float: right;
+  color:#5675B9; 
+  background: #fff;
+  border: solid #5675B9}
 
 .fancybox-button--close::before, .fancybox-button--close::after {
   content: '';
@@ -487,7 +495,8 @@
   left: 15px;
   top: 16px;
   border: 2px solid;
-  background: none; }
+  background: none; 
+  display: none;}
 
 /* Slideshow button */
 .fancybox-button--play::before {

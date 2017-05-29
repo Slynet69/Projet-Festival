@@ -45,7 +45,7 @@
 
         // What buttons should appear in the toolbar
         slideShow  : true,
-        fullScreen : true,
+        fullScreen : false,
         thumbs     : true,
         closeBtn   : true,
 

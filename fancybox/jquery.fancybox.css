@@ -616,10 +616,28 @@ li.fancybox-thumbs-loading {
   opacity: 1; }
 
 /* Styling for Small-Screen Devices */
-@media all and (max-width: 800px) {
+@media all and (min-width:320px) and (max-width: 1024px) {
   .fancybox-thumbs {
     display: none !important; }
   .fancybox-container--thumbs .fancybox-controls,
   .fancybox-container--thumbs .fancybox-slider-wrap,
   .fancybox-container--thumbs .fancybox-caption-wrap {
-    right: 0; } }
+    right: 0; }
+   .fancybox-content { 
+    width: 100%!important;
+    top: 0;
+       
+        
+}
+.fancybox-container {  
+    width: 100%!important;
+    left: 0px;
+    top:0;
+  
+  }
+.fancybox-slide {
+height: none!important;
+}
+.fancybox-slide::before {
+height: none!important;    
+}

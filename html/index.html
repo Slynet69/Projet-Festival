@@ -12,28 +12,37 @@
     <title>Festival des Films en Plein Air</title>
 </head>
 
-<body>
+ <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="0">
     <div class="container">
         <header>
-            <div id="titre" class="col-md-11 text-center"><h1> FeSTiVaL DeS FiLmS de PleiN AiR</h1></div>
-            <div class="col-md-11 text-center"><h4 id="soustitre">du 4 au 8 aout 2017, Parc Monceau (Paris)</h4></div>
+            <div id="titre" class="text-center"><a href="index.html"><h1> FeSTiVaL DeS FiLmS de PleiN AiR</h1></a></div>
+            <div class="text-center"><h4 id="soustitre">du 4 au 8 aout 2017, Parc Monceau (Paris)</h4></div>
+            <div class="text-center"><h4 id="soustitre2">ENTREE LIBRE ET GRATUITE</h4></div>
         </header>
     
-       <div id="box" class="container col-md-10 col-md-offset-1">
+       <div id="box" class="col-sm-12 col-xs-12 col-md-10 col-md-offset-1 text-center">
         <nav>
-            <div class="navbar navbar-default ">
+            <div class="navbar navbar-default text-center ">
+               
+                <button type="button" id="bouton" class="navbar-toggle navbar-center " data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                </button>
                 
               <div class="row text-center ">
+                 <div class="collapse navbar-collapse " >
                   <ul class="nav navbar-nav ">
-                       
-                        <li class="active"><a href="#">Accueil</a></li>
-                        <li><a href="#">Les Actus</a></li>
-                        <li><a href="#">Le Programme</a></li>
-                        <li><a href="#">Infos Pratiques</a></li>
-                        <li><a href="#">Qui sommes-nous?</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="hidden"><a href="#page-top"></a></li>                      
+                        <li class="lien active"><a href="index.html">Accueil</a></li>
+                        <li><a id="lienActus" class="lien" href="#lesactus">Les Actus</a></li>
+                        <li><a class="lien" href="Leprogramme.html">Le Programme</a></li>
+                        <li><a class="lien" href="InfosPratiques.html">Infos Pratiques</a></li>
+                        <li><a class="lien" href="Preinscription.html">Pré/Inscription</a></li>
+                        <li><a class="lien" href="Contact.html">Contact</a></li>
                         
                     </ul>
+                  </div><!-- end collapse navbar-collapse-->    
                     
                </div><!--end row text-center-->
                 
@@ -45,11 +54,11 @@
            
         
 
-        <div class="col-md-11 ">
-           <section id="section" class="row text-center ">
+        <div class="col-md-10 col-md-offset-1 ">
+           <section id="section_carousel" class="row text-center ">
    
              
-              <div id="carousel" class="carousel slide carousel-fade col-md-4" data-ride="carousel" data-interval="3000">
+              <div id="carousel" class="carousel slide carousel-fade col-md-4 col-xs-6" data-ride="carousel" data-interval="3000">
                 <ol class="carousel-indicators">
                     <li data-target="#carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel" data-slide-to="1"></li>
@@ -67,7 +76,7 @@
                 </div><!--end carousel slide-->
                
                
-                <div id="carousel" class="carousel slide carousel-fade col-md-4" data-ride="carousel" data-interval="3000" data-delay="1500">
+                <div id="carousel" class="carousel slide carousel-fade col-md-4 col-xs-6 " data-ride="carousel" data-interval="3000" data-delay="1500">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel" data-slide-to="1"></li>
@@ -85,7 +94,7 @@
                 </div><!--carousel slide-->
                 
                    
-                <div id="carousel" class="carousel slide carousel-fade col-md-4" data-ride="carousel" data-interval="3000">
+                <div id="carousel" class="carousel slide carousel-fade col-md-4 col-xs-6" data-ride="carousel" data-interval="3000">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel" data-slide-to="1"></li>
@@ -100,7 +109,7 @@
                     </div><!--carousel-inner-->
                 </div><!--carousel slide-->
                
-                 <div id="carousel" class="carousel slide  carousel-fade col-md-4" data-ride="carousel" data-interval="3000" data-delay="1500">
+                 <div id="carousel" class="carousel slide  carousel-fade col-md-4 col-xs-6" data-ride="carousel" data-interval="3000" data-delay="1500">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel" data-slide-to="1"></li>
@@ -115,22 +124,22 @@
                     </div><!--carousel-inner-->
                 </div><!--carousel slide-->              
                
-                 <div id="carousel" class="carousel slide carousel-fade col-md-4" data-ride="carousel" data-interval="3000">
+                 <div id="carousel" class="carousel slide carousel-fade col-md-4 col-xs-6" data-ride="carousel" data-interval="3000">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel" data-slide-to="1"></li>
                         <li data-target="#carousel" data-slide-to="2"></li>
                         <li data-target="#carousel" data-slide-to="3"></li>  
                     </ol>
-                   <div class="carousel-inner"> <div class="carousel-caption"><h2>Les tontons flingeurs</h2><h3>5 Aout</h3><h3>20h00</h3></div>    
-                        <div class="item active img-responsive"><img src="../images/totoro1.jpg" alt="film Incendies" /></div>
-                        <div class="item img-responsive"><img src="../images/totoro2.jpg" alt="film Incendies" /></div>
-                        <div class="item img-responsive"><img src="../images/totoro3.jpg" alt="film Incendies" /></div>
-                        <div class="item img-responsive"><img src="../images/totoro5.jpg" alt="film Incendies" /></div>
+                   <div class="carousel-inner"> <div class="carousel-caption"><h2>Snowden</h2><h3>5 Aout</h3><h3>20h00</h3></div>    
+                        <div class="item active img-responsive"><img src="../images/snowden1.jpg" alt="film Incendies" /></div>
+                        <div class="item img-responsive"><img src="../images/snowden2.jpg" alt="film Incendies" /></div>
+                        <div class="item img-responsive"><img src="../images/snowden3.jpg" alt="film Incendies" /></div>
+                        <div class="item img-responsive"><img src="../images/snowden4.jpg" alt="film Incendies" /></div>
                     </div><!--carousel-inner-->
                 </div><!--carousel slide-->                
                
-                 <div id="carousel" class="carousel slide carousel-fade col-md-4" data-ride="carousel" data-interval="3000" data-delay="1500">
+                 <div id="carousel" class="carousel slide carousel-fade col-md-4 col-xs-6" data-ride="carousel" data-interval="3000" data-delay="1500">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel" data-slide-to="1"></li>
@@ -145,7 +154,7 @@
                     </div><!--carousel-inner-->
                 </div><!--carousel slide-->                
                
-                 <div id="carousel" class="carousel slide carousel-fade col-md-4" data-ride="carousel" data-interval="3000">
+                 <div id="carousel" class="carousel slide carousel-fade col-md-4 col-xs-6" data-ride="carousel" data-interval="3000">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel" data-slide-to="1"></li>
@@ -161,7 +170,7 @@
                 </div><!--carousel slide-->  
                              
                
-                 <div id="carousel" class="carousel slide carousel-fade col-md-4" data-ride="carousel" data-interval="3000" data-delay="1500">
+                 <div id="carousel" class="carousel slide carousel-fade col-md-4 col-xs-6" data-ride="carousel" data-interval="3000" data-delay="1500">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel" data-slide-to="1"></li>
@@ -176,7 +185,7 @@
                     </div><!--carousel-inner-->
                 </div><!--carousel slide-->  
                
-                 <div id="carousel" class="carousel slide carousel-fade col-md-4" data-ride="carousel" data-interval="3000">
+                 <div id="carousel" class="carousel slide carousel-fade col-md-4 col-xs-6" data-ride="carousel" data-interval="3000">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel" data-slide-to="1"></li>
@@ -191,7 +200,7 @@
                     </div><!--carousel-inner-->
                 </div><!--carousel slide-->                                               
               
-                 <div id="carousel" class="carousel slide carousel-fade col-md-4" data-ride="carousel" data-interval="3000" data-delay="1500">
+                 <div id="carousel" class="carousel slide carousel-fade col-md-4 col-xs-6" data-ride="carousel" data-interval="3000" data-delay="1500">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel" data-slide-to="1"></li>
@@ -206,7 +215,7 @@
                     </div><!--carousel-inner-->
                 </div><!--carousel slide-->                
                
-                 <div id="carousel" class="carousel slide carousel-fade col-md-4" data-ride="carousel" data-interval="3000">
+                 <div id="carousel" class="carousel slide carousel-fade col-md-4 col-xs-6" data-ride="carousel" data-interval="3000">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel" data-slide-to="1"></li>
@@ -219,11 +228,11 @@
                         <div class="item img-responsive"><img src="../images/memento2.jpg" alt="film Incendies" /></div>
                         <div class="item img-responsive"><img src="../images/memento3.jpg" alt="film Incendies" /></div>
                         <div class="item img-responsive"><img src="../images/memento5.jpg" alt="film Incendies" /></div>
-                    </div><!--carousel-inner-->
+                    </div><!--end carousel-inner-->
                     </a><!--end lien vers details film-->
-                </div><!--carousel slide-->               
+                </div><!--end carousel slide-->               
                
-                 <div id="carousel" class="carousel slide carousel-fade col-md-4" data-ride="carousel" data-interval="3000" data-delay="1500">
+                 <div id="carousel" class="carousel slide carousel-fade col-md-4 col-xs-6" data-ride="carousel" data-interval="3000" data-delay="1500">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel" data-slide-to="1"></li>
@@ -235,17 +244,82 @@
                         <div class="item img-responsive"><img src="../images/neon2.jpg" alt="film Incendies" /></div>
                         <div class="item img-responsive"><img src="../images/neon3.jpg" alt="film Incendies" /></div>
                         <div class="item img-responsive"><img src="../images/neon5.jpg" alt="film Incendies" /></div>
-                    </div><!--carousel-inner-->
-                </div><!--carousel slide-->               
+                    </div><!--end carousel-inner-->
+                </div><!--end carousel slide-->               
                
-               
+                            
+            </section><!--end section id="section_carousel"-->
             
-            
-       
+        </div><!-- end div carousel-->
+        
+         </div><!-- end container col-md-10 -->  
+         
+         
+         <div id="lesactus" class="lesactus col-md-10 col-md-offset-1 ">
+             <div class="titreactus text-center "><a class="lienHautDePage" href="#titre"><h1>Les Actus</h1></a></div>
+             
+             
+             <div class="soustitreactus text-center"><h3>Le Festival annonce son progamme 2017</h3></div>
+             <div class="dateactus text-center"><h4>24 Mai 2017</h4></div>
+             <p class="texteactus">
+             Le plus grand festival de plein air de Paris vous promet cette année encore une fascinante sélection de films d'auteurs, 
+de vrais classiques voués à devenir cultes.<br/>
+Prevenez vos amis, et venez partager ensemble les films suivants:<br/>
+-le samedi 4 Aout : Incendies, Her, Get Out<br/>
+-le dimanche 5 Aout: Mon voisin Totoro, Les tontons flingeurs, Old Boy<br/>
+-le lundi 6 Aout: Le voyage de Chihiro, Manchester by the Sea, La cité de dieu<br/>
+-le mardi 7 Aout:  Nausicaa la vallée du vent, Memento, The Neon Demon</p>
+             
+             <div class="soustitreactus text-center"><h3>Le Festival décroche le parc monceau</h3></div>
+             <div class="dateactus text-center"><h4> 18 Avril 2017</h4></div>
+             <p class="texteactus">             
+             Nous venons d'obtenir à l'instant l'accord de la ville de Paris !!!<br/>
+Le festival aura bel et bien lieu au Parc Monceau, cet été , du 5 au 8 Aout 2017, de 18h à minuit.<br/>
+Le plus élégant des jardins de Paris, ses arbres spectaculaires, son arcade Renaissances, son grand bassin
+vous offre le plus bel écrin pour vos soirées cinéma.<br/>
+A trés vite sous le ciel de Paris....
+             </p>
+              
+             
+           </div><!--end div les actus-->
+           
+        <div id="hautdepage" class="col-md-3 col-md-offset-9 text-center item img-responsive "><a class="lienHautDePage" href="#titre"><img class="logoup" src="../images/up.png" /><figcaption>Haut de page</figcaption></a></div> 
+        
+          <footer> 
+            <div id="footer" class="col-md-10 col-md-offset-1 col-xs-12 ">
+             
+                <div class="liensfooter1 col-md-3">
+                    <h4>L'Association</h4>
+                        <h5> Qui Sommes-nous</h5>
+                        <h5> Contact</h5>
+                </div>
+                <div class="liensfooter2 col-md-3 ">
+                    <h4> Lieu du Festival</h4>
+                        <h5> Le Parc Monceau</h5>
+                        <h5>Se rendre au festival</h5>
+                </div>
+                 <div class="liensfooter2 col-md-3">
+                    <h4> Suivez nous sur:</h4>
+                        <img class="logo" src="../images/facebook.png" alt="facebook"  />
+                        <img class="logo" src="../images/google+.png" alt="google+" />
+                        <img class="logo" src="../images/Instagram.png" alt="instagram" />
+                        <img class="logo" src="../images/twitter.png" alt="twitter" />
+                 </div> 
+                 <div class="liensfooter3 col-md-3">
+                    <h4> Partenaires:</h4>
+                     <a href="http://www.allocine.fr" title="Allocine" target="_blank">ALLOCINE</a><br/>
+                     <a href="http://www.paris.fr/" title="Ville de Paris" target="_blank">VILLE DE PARIS</a>
+                     <a href="https://www.openclassrooms.com" title="OpenClassrooms" target="_blank">OPENCLASSROOMS</a>
+                 </div> 
                 
-            </section>
-        </div>
+                
+             </div><!-- end div id footer-->
+            </footer>     
+      
     
+           
+           
+           
             <!-- jQuery 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -260,7 +334,45 @@
                                                  
                     
         <script>
-         $(function() {   
+         $(function() {
+             
+             
+            $('#lienActus').on('click', function(e) {
+                e.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000, function(){
+                    window.location.hash = hash;
+                });
+            });
+
+            $('.lienHautDePage').on('click', function(e) {
+                e.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000, function(){
+                    window.location.hash = hash;
+                });
+            });
+                          
+             
+             
+             
+             
+             
+            //Menu retractable sous mobile
+
+            $('.lien').on('click', () => $('#bouton').click()); 
+             
+            //message clignotant 
+             if ($(window).width()>768){ 
+            function blinker() {
+                $('#soustitre2').fadeOut(500);
+                $('#soustitre2').fadeIn(500);}
+             }else{};
+             setInterval(blinker, 2000)           
              
   
             $('.carousel').carousel(); 
@@ -293,10 +405,11 @@
              $carousels.carousel('delay');
        
          });
-        </script>                                       
+        </script>   
+        
+
     
-    
-        </div><!-- end container col-md-10 -->
+        
     </div><!--container-->
     </body>
 

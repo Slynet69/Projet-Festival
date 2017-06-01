@@ -245,6 +245,27 @@ nav{padding-left:7.3%}
             }
 
 
+#btnSubmit{
+    margin-top: 2%;
+}
+
+input:invalid {
+  border: 1px solid #446787;
+  }
+#email:valid{
+  border: 2px solid green;
+ }    
+#nombre:valid{
+  border: 2px solid green;
+ }    
+  
+
+.error{
+        color:red;
+}
+    
+
+
 /*RESPONSIVE*/
 
 
@@ -406,7 +427,12 @@ font-size:15px;
     font-family: 'the-tribal-box.ffp';
     
 }
-  
+
+
+    
+    
+    
+    
 /*tableau*/    
 .rg-container {
 	max-width: 600px;

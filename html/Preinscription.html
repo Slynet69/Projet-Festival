@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="../css/jPushMenu.css" />
 
 
-        <title>Le Programme</title>
+        <title>Pré/Inscription</title>
     </head>
 
 
@@ -72,15 +72,121 @@
 
   
         <div class="row">
-            
-         		<form >
-							
-			<ul >
-			
-				<li id="li_1" ><label class="description" for="element_1">Prenom </label><input id="element_1_1"  class="element text" maxlength="255" size="8" value=""/></li>
-			</ul>
-		</form>	   
-            
+           <section class="col-xs-12 col-sm-6 col-md-offset-3">
+            	<form class="well" >
+            	    <legend class="text-center">Remplissez les informations pour vous préinscrire</legend>
+            	        <div class="form-group">
+                          <label for="texte">Votre nom : </label>
+                          <input id="nom" type="text" class="form-control" placeholder="Saisir votre nom" maxlength="50" >
+                        </div>
+            	        <div class="form-group">
+                          <label for="texte">Votre prénom : </label>
+                          <input id="prénom" type="text" class="form-control" placeholder="Saisir votre prénom" maxlength="50">
+                        </div>
+            	        <div class="form-group">
+                            <label for="texte">Votre email (obligatoire) :</label>
+                          <input id="email" type="email" class="verif-email form-control" placeholder="Saisir votre adresse mail" maxlength="50" required  pattern="/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/">
+                        </div>	
+                                              							
+            	        <div class="form-group ">
+                          <label for="texte">Nombre de personnes (obligatoire) : : </label>
+                          <input id="nombre" type="number"  class="form-control " max="50" required >
+                        </div>	
+                        <h4>Choisissez le ou les films auxquels vous souhaitez assister :</h4>
+                         <div class="error text-center"></div>    
+                            <fieldset>
+                              <div class="checkbox">
+                                <label for="incendies" class="checkbox">
+                                  <input type="checkbox" name="origine" value="incendies" id="incendies">
+                                    4 Aout 2017 - 18h00 - Incendies 
+                                </label>
+                            </div>    
+                            
+                              <div class="checkbox">
+                                <label for="her" class="checkbox">
+                                  <input type="checkbox" name="origine" value="her" id="her">
+                                    4 Aout 2017 - 20h00 - Her
+                                </label>
+                              </div> 
+                              <div class="checkbox">
+                                <label for="getout" class="checkbox">
+                                  <input type="checkbox" name="origine" value="getout" id="getout">
+                                    4 Aout 2017 - 20h00 - Get Out
+                                </label>
+                              </div>
+                               
+                                <br/>     
+                                                                                                       			
+                              <div class="checkbox">
+                                <label for="totoro" class="checkbox">
+                                  <input type="checkbox" name="origine" value="totoro" id="totoro">
+                                    5 Aout 2017 - 18h00 - Mon Voisin Totoro
+                                </label>
+                              </div>                            						
+                              <div class="checkbox">
+                                <label for="snowden" class="checkbox">
+                                  <input type="checkbox" name="origine" value="snowden" id="snowden">
+                                    5 Aout 2017 - 20h00 - Snowden
+                                </label>
+                              </div>    
+                                <div class="checkbox">
+                                <label for="oldboy" class="checkbox">
+                                  <input type="checkbox" name="origine" value="oldboy" id="oldboy">
+                                    5 Aout 2017 - 22h00 - Old Boy
+                                </label>
+                               </div> 
+                               
+                               <br/>                              
+                              
+                                <div class="checkbox">
+                                <label for="chihiro" class="checkbox">
+                                  <input type="checkbox" name="origine" value="chihiro" id="chihiro">
+                                    6 Aout 2017 - 18h00 - Le voyage de Chihiro
+                                </label>
+                                </div>   
+                                                       									
+                                <div class="checkbox">
+                                <label for="manchester" class="checkbox">
+                                  <input type="checkbox" name="origine" value="manchester" id="manchester">
+                                    6 Aout 2017 - 20h00 - Manchester by the Sea
+                                </label>
+                                </div> 
+                               
+                                <div class="checkbox">
+                                <label for="cite" class="checkbox">
+                                  <input type="checkbox" name="origine" value="cite" id="cite">
+                                    6 Aout 2017 - 22h00 - La cité de Dieu
+                                </label>
+                                </div> 
+                                
+                                <br/>
+                                
+                                <div class="checkbox">
+                                <label for="nausicaa" class="checkbox">
+                                  <input type="checkbox" name="origine" value="nausicaa" id="nausicaa">
+                                    7 Aout 2017 - 18h00 - Nausicaa, la vallee du Vent
+                                </label>
+                                </div>                                 
+                                <div class="checkbox">
+                                <label for="memento" class="checkbox">
+                                  <input type="checkbox" name="origine" value="memento" id="memento">
+                                    7 Aout 2017 - 20h00 - Memento
+                                </label>
+                                </div>   
+                                <div class="checkbox">
+                                    <label for="neon" class="checkbox">
+                                      <input type="checkbox" name="origine" value="neon" id="neon">
+                                    7 Aout 2017 - 20h00 - The Neon Demon
+                                </label>
+                                </div> 
+                                  <label for="textarea">Votre message :</label>
+                                    <textarea id="textarea" class="form-control" rows="4" cols="4"></textarea>
+               
+                                  <button id="btnSubmit" class="btn btn-primary text-center col-md-3 " type="submit">Envoyer</button>                                                               
+                           
+                            </fieldset>															
+		        </form>	   
+            </section>    
             
         </div>    
             
@@ -95,8 +201,7 @@
             
             
             
-        </div>
-
+        
 
 
 
@@ -147,6 +252,17 @@
 
             <script>
                 $(function() {
+                    
+                     $('#btnSubmit').click(function(e) {
+                        var checked = $(':checkbox:checked').length;
+                        if (checked == 0) {
+                            $('.error').text('Au moins un film doit être sélectionné!');
+                            e.preventDefault();
+                        }
+                    });
+                    
+
+                    
 
                     if ($(window).width()<768){ 
                         $('#nav').removeAttr('class');

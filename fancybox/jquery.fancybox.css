@@ -489,14 +489,10 @@
     margin: 0; } }
 
 /* Fullscreen  */
-.fancybox-button--fullscreen::before {
-  width: 15px;
-  height: 11px;
-  left: 15px;
-  top: 16px;
-  border: 2px solid;
-  background: none; 
-  display: none;}
+.fancybox-button--fullscreen{
+  display: none!important;
+
+ }
 
 /* Slideshow button */
 .fancybox-button--play::before {

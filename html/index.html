@@ -14,14 +14,16 @@
 
  <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="0">
     <div class="container">
+       <div class="row">
         <header>
             <div id="titre" class="text-center"><a href="index.html"><h1> FeSTiVaL DeS FiLmS de PleiN AiR</h1></a></div>
             <div class="text-center"><h4 id="soustitre">du 4 au 8 aout 2017, Parc Monceau (Paris)</h4></div>
             <div class="text-center"><h4 id="soustitre2">ENTREE LIBRE ET GRATUITE</h4></div>
         </header>
+        </div>
     
       <div class='row'>
-       <div id="box" class="col-sm-12 col-xs-12 col-md-10 col-md-offset-1  text-center">
+       <div id="box" class="col-sm-12 col-xs-12 col-md-10 col-md-offset-1   text-center">
         <nav>
             <div class="navbar navbar-default text-center ">
                
@@ -36,11 +38,11 @@
                   <ul class="titresmenu nav navbar-nav ">
                         <li class="hidden"><a href="#page-top"></a></li>      
                         <li class="active"><a class="lien" href="index.html">Accueil</a></li>
-                        <li><a id="lienActus" class="lien" href="#lesactus">Les Actus</a></li>
-                        <li><a class="lien" href="Leprogramme.html">Le Programme</a></li>
-                        <li><a class="lien" href="InfosPratiques.html">Infos Pratiques</a></li>
-                        <li><a class="lien" href="Preinscription.html">Pré/Inscription</a></li>
-                        <li><a class="lien" href="Contact.html">Contact</a></li>
+                        <li ><a id="lienActus" class="lien" href="#lesactus">Les Actus</a></li>
+                        <li ><a class="lien" href="Leprogramme.html">Le Programme</a></li>
+                        <li ><a class="lien" href="InfosPratiques.html">Infos Pratiques</a></li>
+                        <li ><a class="lien" href="Preinscription.html">Pré/Inscription</a></li>
+                        <li ><a class="lien" href="Contact.html">Contact</a></li>
                       
                     </ul>
                   </div><!-- end collapse navbar-collapse-->    
@@ -55,7 +57,7 @@
            
         
         <div class='row'>
-        <div class="col-md-8 col-md-offset-2 text-center">
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
            <section id="section_carousel" class="row text-center ">
    
              
@@ -238,7 +240,7 @@
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel" data-slide-to="1"></li>
                         <li data-target="#carousel" data-slide-to="2"></li>
-                        <li data-target="#carousel" data-slide-to="3"></li>  
+                        <li data-target="#carousel" data-slide-to4="3"></li>  
                     </ol>
                    <div class="carousel-inner"> <div class="carousel-caption"><h2>The Neon Demon</h2><h3 class="titrevignette">7 Aout</h3><h3 class="titrevignette">22h00</h3></div>    
                         <div class="item active img-responsive"><img src="../images/neon1.jpg" alt="film Incendies" /></div>
@@ -372,7 +374,9 @@ A trés vite sous le ciel de Paris....
                 $('#soustitre2').fadeOut(500);
                 $('#soustitre2').fadeIn(500);}
              }else{};
-             setInterval(blinker, 2000)           
+             
+             
+             setInterval(blinker, 2000);          
              
   
             $('.carousel').carousel(); 
@@ -404,7 +408,14 @@ A trés vite sous le ciel de Paris....
              // Call the carousels with the delay method.
              $carousels.carousel('delay');
        
-         });
+ 
+
+      
+
+            
+            
+        });    
+            
         </script>   
         
 

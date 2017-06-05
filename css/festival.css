@@ -24,7 +24,9 @@ h1 {
   font-family: 'the-tribal-box.ffp';  
   color: rgb(68, 103, 135);
     }
-
+a:hover{
+    text-decoration: none;
+}
 
 #titre{
     padding-bottom: 0px;
@@ -53,8 +55,8 @@ h1 {
     font-size: 45px;
     }
 
-#titreactus h1,#titresousmenus h1{
-   font-size: 100px!important; 
+.titreactus h1{
+   font-size: 110px!important; 
 }
 
 .soustitreactus{
@@ -62,12 +64,16 @@ h1 {
     padding-top: 1%;
 }
 
+#footer a{
+    text-decoration:none;
+    color:black;
+    }
 
-/*.titresmenu {
-  font-size: 48px;
-  font-family: 'the-tribal-box.ffp';  
-  color: rgb(68, 103, 135);
-  }*/
+#footer h4{    
+    color:rgb(68, 103, 135);
+    font-weight: bold;
+}
+
 .lien {
   font-size: 50px;
   font-family: 'the-tribal-box.ffp';  
@@ -78,8 +84,12 @@ h1 {
 
 .titresmenu{
     padding-left: 1%;
+
 }
 
+#titrefiche h1{
+    font-size: 85px;
+}
 
 .nav li{padding-left:0px; padding-right:0px;
    margin-left:0px; margin-right:0px;}
@@ -101,6 +111,8 @@ li{
     font-size:1.2em;
 }
 
+
+
 .boxpratique{
     margin-top:4%;
 }
@@ -114,6 +126,18 @@ li{
     border-top: dotted #446787;
     border-bottom: dotted #446787;
     margin-bottom: 2%;
+}
+
+.contenuPratique{
+    background:#FBFCFD; 
+}
+
+#menuleft{
+    padding-left: 2%;
+}
+
+.textContact{
+    font-size: 20px;
 }
 
 /* Carousel Fading slide */
@@ -272,7 +296,7 @@ nav{padding-left:7.3%}
 
 .navbar-toggle {
     float: none;
-    margin-right:0;
+    margin-right:10%;
 }
 
 .fancybox-button fancybox-button--fullscreen{
@@ -317,7 +341,6 @@ input:invalid {
 .error{
         color:red;
 }
-    
 
 
 /*RESPONSIVE*/
@@ -335,10 +358,14 @@ td{
 
 @media all and (min-width: 990px) and (max-width: 1200px)
 {
-h1 {
+#titre h1 {
       font-size: 140px;
 }
 
+#titresousmenus h1{
+    font-size:90px;    
+    }       
+    
 #titre{
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -352,20 +379,23 @@ h1 {
     font-size: 25px;
 }
 #soustitre2{
-    font-size: 45px;
+    font-size: 50px;
 }
-.titresmenu {
-  font-size: 40px;
+.titresmenu a {
+  font-size: 45px;
 }  
-
+nav{padding-left:1%}
 
 }
 
 @media all and (min-width: 768px) and (max-width: 990px)
 {
-h1 {
-      font-size: 100px;
+#titre h1{
+      font-size: 130px;
 }
+#titresousmenus h1{
+    font-size:100px;    
+   margin-top: 0px; }   
     
 #titre{
     padding-bottom: 0px;
@@ -379,24 +409,30 @@ h1 {
     
 #soustitre{
     font-size: 20px;
+    margin-top: 30px;
 }
 #soustitre2{
     font-size: 35px;
 }
-.titresmenu {
-  font-size: 35px;
-}   
-
+.titresmenu a {
+  font-size: 40px;
+}  
+nav{padding-left:1.7%}
 
 
     
 }
 
-@media all and (min-width: 480px)and (max-width: 768px)
+@media all and (min-width: 560px)and (max-width: 768px)
 {
-h1 {
-      font-size: 80px;
+#titre h1,#titresousmenus h1 {
+      font-size: 100px;
 }
+    
+#titresousmenus h1 {
+      font-size: 80px;
+    margin-top: 0px;
+}    
     
 #titre{
     padding-bottom: 0px;
@@ -410,6 +446,8 @@ h1 {
     
 #soustitre{
     font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 #soustitre2{
     display: none;
@@ -417,7 +455,9 @@ h1 {
 .titresmenu {
   font-size: 45px;
 } 
-    
+#menuleft{
+display: none;        
+    }    
 
     
     
@@ -426,12 +466,14 @@ h1 {
 
 
 
-@media all and (max-width: 480px)
+@media all and (max-width: 560px)
 {
-h1 {
-      font-size: 45px;
+#titre h1, #titresousmenus h1{
+      font-size: 50px;
 }
-    
+#titresousmenus h1{    
+    margin-top: 0px;
+    }
 #titre{
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -452,7 +494,9 @@ h1 {
   font-size: 45px;
 }  
     
-
+.textContact{
+    font-size: 18px;
+}
 
 #sectioncarousel, .titrevignette{
     font-size: 15px;
@@ -497,7 +541,9 @@ font-size:15px;
     height: 450px;
 }
 
-    
+#menuleft{
+display: none;        
+    }       
     
     
     
@@ -726,3 +772,4 @@ table.rg-table th.number, td.number {
 
 
 }
+

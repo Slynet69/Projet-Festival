@@ -15,7 +15,9 @@ body{
     background: #FFFFFF;
 }
 
-
+p{
+    margin-bottom: 2%;
+}
 
 h1 {
   font-size: 160px;
@@ -55,12 +57,29 @@ h1 {
    font-size: 100px!important; 
 }
 
+.soustitreactus{
+    margin-top: 1%;
+    padding-top: 1%;
+}
 
-ul {
+
+/*.titresmenu {
+  font-size: 48px;
+  font-family: 'the-tribal-box.ffp';  
+  color: rgb(68, 103, 135);
+  }*/
+.lien {
   font-size: 50px;
   font-family: 'the-tribal-box.ffp';  
   color: rgb(68, 103, 135);
+  margin:0;
+  padding: 0;    
   }
+
+.titresmenu{
+    padding-left: 1%;
+}
+
 
 .nav li{padding-left:0px; padding-right:0px;
    margin-left:0px; margin-right:0px;}
@@ -70,6 +89,32 @@ img { width: 100%; }
 .col-md-4{padding-right:5px;
 padding-left: 0px;padding-bottom: 5px;}
 
+.venir{
+    text-decoration: underline;
+}
+
+p{
+    font-size:1.2em;
+}
+
+li{
+    font-size:1.2em;
+}
+
+.boxpratique{
+    margin-top:4%;
+}
+
+.boxpratique h3{
+    color: #446787!important;
+    font-weight: bold;
+   }
+.groupeActus{
+    background: #FBFCFD;
+    border-top: dotted #446787;
+    border-bottom: dotted #446787;
+    margin-bottom: 2%;
+}
 
 /* Carousel Fading slide */
 .carousel-fade .carousel-inner { background: #000; }
@@ -244,6 +289,15 @@ nav{padding-left:7.3%}
         margin-left: 2%;
             }
 
+.boxpratique #inscription {
+        background: #446787;
+        color: #fff;
+        border-radius: 8px;
+        text-align: center;
+        padding-left: 1%;
+        padding-right: 1%;
+        }
+
 
 #btnSubmit{
     margin-top: 2%;
@@ -300,9 +354,11 @@ h1 {
 #soustitre2{
     font-size: 45px;
 }
-ul {
+.titresmenu {
   font-size: 40px;
-}    
+}  
+
+
 }
 
 @media all and (min-width: 768px) and (max-width: 990px)
@@ -327,10 +383,12 @@ h1 {
 #soustitre2{
     font-size: 35px;
 }
-ul {
+.titresmenu {
   font-size: 35px;
 }   
-  
+
+
+
     
 }
 
@@ -356,9 +414,13 @@ h1 {
 #soustitre2{
     display: none;
    }
-ul {
+.titresmenu {
   font-size: 45px;
-}    
+} 
+    
+
+    
+    
 }
 
 
@@ -386,11 +448,13 @@ h1 {
 #soustitre2{
     display: none;
    }
-ul {
+.titresmenu {
   font-size: 45px;
 }  
+    
 
-#sectioncarousel, h3{
+
+#sectioncarousel, .titrevignette{
     font-size: 15px;
   }    
    
@@ -428,6 +492,10 @@ font-size:15px;
     
 }
 
+#googlemap{
+    width:450px;
+    height: 450px;
+}
 
     
     

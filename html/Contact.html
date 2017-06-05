@@ -1,83 +1,132 @@
 <!DOCTYPE html>
 <html lang="">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/festival.css" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
-    <title>Contact</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/festival.css" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+        <link  href="../fancybox/jquery.fancybox.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/jPushMenu.css" />
 
 
-<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="0">
-    <div class="container">
-       
-        <header>
-            <div id="titre" class="text-center"><a href="index.html"><h1> FeSTiVaL DeS FiLmS de PleiN AiR</h1></a></div>
-            <div class="text-center"><h4 id="soustitre">du 4 au 8 aout 2017, Parc Monceau (Paris)</h4></div>
-        </header>
-        
-       <div id="box" class="col-sm-12 col-xs-12 col-md-10 col-md-offset-1 text-center">
-        <nav>
-            <div class="navbar navbar-default text-center ">
+        <title>Contact</title>
+    </head>
+
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="0">
+        <div class="container">
+            <header>
+                <div id="titre" class="text-center"><a href="index.html"><h1> FeSTiVaL DeS FiLmS de PleiN AiR</h1></a></div>
+                <div class="text-center"><h4 id="soustitre">du 4 au 8 aout 2017, Parc Monceau (Paris)</h4></div>
+            </header>
+
+
+
+            <div class="row">              
+                <div id="box" class="col-sm-12 col-xs-12 col-md-10 col-md-offset-1 text-center">
+                    <nav id="nav" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" >
+                        <div class="navbar navbar-default text-center ">
+
+                            <button type="button" id="bouton" class="navbar-toggle navbar-center " data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <div class="row text-center ">
+                                <div class="collapse navbar-collapse " >
+                                    <ul class="titresmenu nav navbar-nav ">
+                                        <li class="hidden"><a href="#page-top"></a></li>      
+                                        <li class="active"><a class="lien" href="index.html">Accueil</a></li>
+                                        <li><a id="lienActus" class="lien" href="index.html#lesactus">Les Actus</a></li>
+                                        <li><a class="lien" href="Leprogramme.html">Le Programme</a></li>
+                                        <li><a class="lien" href="InfosPratiques.html">Infos Pratiques</a></li>
+                                        <li><a class="lien" href="Preinscription.html">Pré/Inscription</a></li>
+                                        <li><a class="lien" href="Contact.html">Contact</a></li>
+
+                                    </ul>
+                                </div><!-- end collapse navbar-collapse-->    
+
+                            </div><!--end row text-center-->
+
+                        </div><!-- end navbar navbar-default col-md-8 col-md-offset-2-->        
+                    </nav>
+                </div><!--end div id box-->
+            </div><!--end div row-->    
+
+            <div id="menuleft" class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1 text-left">
+                <a id="menuaccueil" class="col-md-2  " href="index.html">Accueil</a> 
+                <a id="menumenu" class="col-md-2  toggle-menu menu-left">Menu</a>
+                
+                
                
-                <button type="button" id="bouton" class="navbar-toggle navbar-center " data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                </button>
-                
-              <div class="row text-center ">
-                 <div class="collapse navbar-collapse " >
-                  <ul class="nav navbar-nav ">
-                        <li class="hidden"><a href="#page-top"></a></li>      
-                        <li class="active"><a class="lien" href="index.html">Accueil</a></li>
-                        <li><a id="lienActus" class="lien" href="index.html #lesactus">Les Actus</a></li>
-                        <li><a class="lien" href="Leprogramme.html">Le Programme</a></li>
-                        <li><a class="lien" href="InfosPratiques.html">Infos Pratiques</a></li>
-                        <li><a class="lien" href="Preinscription.html">Pré/Inscription</a></li>
-                        <li><a class="lien" href="Contact.html">Contact</a></li>
-                      
-                    </ul>
-                  </div><!-- end collapse navbar-collapse-->    
-                    
-               </div><!--end row text-center-->
-                
-            </div><!-- end navbar navbar-default col-md-8 col-md-offset-2-->        
-           </nav>
-                               
-       
-       
-       
-    
-            <div id="titrefiche" class=" text-center" > <h1>Contact</h1></div>
-             
-                      
-                               
+            </div>   
+        </div><!--end menu left--> 
+
+
+        <div class="row">    
+            <div id="titresousmenus" class=" text-center" > <h1>Contact</h1></div>
+        </div><!--end div row-->
+
+  
+        <div class="row">
+           <section class="col-xs-12 col-md-8 col-md-offset-2">
+            	<form class="well" >
+            	    <legend class="text-center">Utilisez le formulaire ci-dessous pour nous contacter:</legend>
+                       <fieldset>
+            	        <div class="form-group">
+                          <label for="texte">Votre nom : </label>
+                          <input id="nom" type="text" class="form-control" placeholder="Saisir votre nom" maxlength="50" >
+                        </div>
+            	        <div class="form-group">
+                          <label for="texte">Votre prénom : </label>
+                          <input id="prénom" type="text" class="form-control" placeholder="Saisir votre prénom" maxlength="50">
+                        </div>
+            	        <div class="form-group">
+                            <label for="texte">Votre email (obligatoire) :</label>
+                          <input id="email" type="email" class="verif-email form-control" placeholder="Saisir votre adresse mail" maxlength="50" required  pattern="/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/">
+                        </div>
+                        
+                      <label for="textarea">Votre message :</label>
+                        <textarea id="textarea" class="form-control" rows="4" cols="4"></textarea>
+               
+                      <button id="btnSubmit" class="btn btn-primary text-center col-md-3 " type="submit">Envoyer</button>                                                               
+                           
+                    </fieldset>															
+          															
+		        </form>	        	
+                        			
+            </section>    
+            
+        </div>    
+            
+        <div class='row'>  
+        
         <div id="hautdepage" class="col-md-3 col-md-offset-9 text-center item img-responsive "><a class="lienHautDePage" href="#page-top"><img class="logoup" src="../images/up.png" /><figcaption>Haut de page</figcaption></a></div> 
        
           <footer> 
-            <div id="footer" class="col-md-10 col-md-offset-1 col-xs-12 ">
+            <div id="footer" class=" col-md-10 col-md-offset-1 col-xs-12 text-center">
              
-                <div class="liensfooter1 col-md-3">
+                <div class="liensfooter1 col-xs-12 col-md-3">
                     <h4>L'Association</h4>
-                        <h5> Qui Sommes-nous</h5>
-                        <h5> Contact</h5>
+                    <a id="quiSommesNous" data-fancybox data-src="Quisommesnous.html" href="javascript:;" ><h5> Qui Sommes-nous</h5></a>
+                        <a href="Contact.html"><h5> Contact</h5></a>
                 </div>
-                <div class="liensfooter2 col-md-3 ">
+                <div class="liensfooter2 col-xs-12 col-md-3 ">
                     <h4> Lieu du Festival</h4>
-                        <h5> Le Parc Monceau</h5>
-                        <h5>Se rendre au festival</h5>
+                        <a href="https://www.parisinfo.com/musee-monument-paris/71356/Parc-Monceau"><h5> Le Parc Monceau</h5></a>
+                        <a href="InfosPratiques.html#serendre"><h5>Se rendre au festival</h5></a>
                 </div>
-                 <div class="liensfooter2 col-md-3">
+                 <div class="liensfooter2 col-xs-12 col-md-3">
                     <h4> Suivez nous sur:</h4>
-                        <img class="logo" src="../images/facebook.png" alt="facebook"  />
-                        <img class="logo" src="../images/google+.png" alt="google+" />
-                        <img class="logo" src="../images/Instagram.png" alt="instagram" />
-                        <img class="logo" src="../images/twitter.png" alt="twitter" />
+                     <a href="http://www.facebook.com" title="Facebook" target="_blank"><img class="logo" src="../images/facebook.png" alt="facebook"  /></a>
+                      <a href="http://www.plus.google.com" title="Google+" target="_blank">  <img class="logo" src="../images/google+.png" alt="google+" /></a>
+                      <a href="http://www.instagram.com" title="Instagram" target="_blank"> <img class="logo" src="../images/Instagram.png" alt="instagram" /></a>
+                      <a href="http://www.twitter.com" title="Twitter" target="_blank"> <img class="logo" src="../images/twitter.png" alt="twitter" /></a>
                  </div> 
-                 <div class="liensfooter3 col-md-3">
+                 <div class="liensfooter3 col-xs-12 col-md-3">
                     <h4> Partenaires:</h4>
                      <a href="http://www.allocine.fr" title="Allocine" target="_blank">ALLOCINE</a><br/>
                      <a href="http://www.paris.fr/" title="Ville de Paris" target="_blank">VILLE DE PARIS</a>
@@ -85,27 +134,29 @@
                  </div> 
            
              </div><!-- end div id footer-->
-            </footer>                                            
-                                                 
-                                                          
-                                                                            
-     
-        </div> <!-- end id=box col-md-10--> 
-  
-       
+            </footer>     
+        </div><!--end row-->
+         
+            
+            
+            
+            
+            
+            
+            
+            
+            
         
 
-    
-   
 
-      
 
-       
- 
-    
-   
-  
- 
+
+
+
+
+
+
+
 
 
 
@@ -132,20 +183,32 @@
 
 
             <!-- jQuery 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Javascript de Bootstrap 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->          
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>     
-        <!--LESS-->
-        <!--<script src="less.js" type="text/javascript"></script> -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>      
-        <script src="../fancybox/jquery.fancybox.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <!-- Javascript de Bootstrap 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->          
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>     
+            <!--LESS-->
+            <!--<script src="less.js" type="text/javascript"></script> -->
+            <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>      
+            <script src="../fancybox/jquery.fancybox.min.js"></script>
+            <script src="../js/jPushMenu.js"></script>
 
-        <script>
-         $(function() {   
+
+            <script>
+                $(function() {
+                    
+                     $('#btnSubmit').click(function(e) {
+                        var checked = $(':checkbox:checked').length;
+                        if (checked == 0) {
+                            $('.error').text('Au moins un film doit être sélectionné!');
+                            e.preventDefault();
+                        }
+                    });
+                    
+            /*scrollspy fluide */
              
-            $('.lienHautDePage').on('click', function(e) {
+            $('#lienActus, .lienHautDePage').on('click', function(e) {
                 e.preventDefault();
                 var hash = this.hash;
                 $('html, body').animate({
@@ -153,20 +216,29 @@
                 }, 1000, function(){
                     window.location.hash = hash;
                 });
-            });             
-             
-            function blinker() {
-                $('#soustitrefiche').fadeOut(800);
-                $('#soustitrefiche').fadeIn(800);}
+            });
+                    
 
-             setInterval(blinker, 2500)  
-          });
-        </script>
- 
- 
- 
-  </div><!--end container-->
-  </body>
+                    if ($(window).width()<768){ 
+                        $('#nav').removeAttr('class');
+                    };
+
+                    $('.toggle-menu').jPushMenu();   
+
+
+
+                    function blinker() {
+                        $('#soustitrefiche').fadeOut(800);
+                        $('#soustitrefiche').fadeIn(800);}
+
+                    setInterval(blinker, 2500)  
+                });
+            </script>
+
+
+
+        </div><!--end container-->
+    </body>
 
 
 
